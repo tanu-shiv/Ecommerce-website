@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+ :root{
+     --red: red;
+ }
+body{
+    background-image:
+    url("https://wallpapercave.com/wp/wp1874157.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--red);
+    
+}
+html{
+    font-size: larger;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+header{
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ee0515;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+header .logo{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: rgb(53, 48, 48);
+}
+header .logo i{
+    padding-right: .5rem;
+    color: var(--red);
+}
+header .navbar a{
+    
+    color: rgb(53, 48, 48);
+}
+.firstpage{
+    background: linear-gradient(rgba(255, 253, 253, 0.7),rgba(255, 253, 253, 0.7));
+    border-bottom: 3px solid black;
+    
+    padding: 100px;
+}
+.firstpage h1{
+    text-align: center;
+    color: #ff0000;
+    font-size: 3rem;
+}
+h1{
+    text-align: center;
+    color: #332a2bf4;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.speciality{
+    background: linear-gradient(rgba(255, 253, 253, 0.9),rgba(255, 253, 253, 0.9));
+    margin: 20px;
+    border-radius: 5px;
+}
+.box-container{
+    width: 480px;
+    height: 460px;
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+    flex-basis: auto;
+    gap: 1.5rem;
+}
+.box1{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    padding: 60px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.imagespec{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+.speciality .box-container .box1 .content{
+    text-align: center;
+    padding: 1rem;
+}
+.speciality .box-container .box1 .content h3{
+    font-size: 1.5rem;
+    color: #333;
+}
+.speciality .box-container .box1 .content p{
+    font-size: .6rem;
+    color: #666;
+    padding: 0.8rem 0;
+}
+.speciality .box-container .box1:hover .imagespec{
+    top: 0;
+}
+
+.Banquet_hall{
+    background: linear-gradient(rgba(255, 253, 253, 0.7),rgba(255, 253, 253, 0.7));
+    margin: 20px;
+    border-radius: 5px;
+}
+.box-container1{
+    width: 480px;
+    height: 460px;
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.box2{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    padding: 60px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.imageban{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.buttons{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    transition-duration: .3sec;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #ee0515;
+}
+
+footer{
+    background-color: aliceblue;
+    color: #333; 
+    padding: 50px;
+}
+span{
+    color: #ee0515;
+    
+}
+.buttons :hover{
+    background-color: #333;
+}
